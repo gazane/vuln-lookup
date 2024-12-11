@@ -21,9 +21,9 @@
 ####    - It merges these parameters into a variable and makes a GET request to the following URL:
 ####          h<span>ttps://services.nvd.nist.gov/rest/json/cpes/2.0?keywordSearch= + search variable + "&resultsPerPage=1"
 ####    - The goal is to provide keywords for the search and obtain one CPE Name. This function can return:
-####      - "CPE not found" – If no matches were found for the given parameters.
-####      - "No response" – If no response was received from the server.
-####      - A valid CPE Name.
+####      -- "CPE not found" – If no matches were found for the given parameters.
+####      -- "No response" – If no response was received from the server.
+####      -- A valid CPE Name.
 ####  3. Getting Vulnerabilities:
 ####     - The script then calls the function get_cve to get the vulnerabilities associated with the CPE Name. It provides the following variables: Asset ID, CPE Name, and output CSV file.
 ####     - This function tries to find vulnerabilities associated with the CPE Name and appends the results to the output CSV file.
